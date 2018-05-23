@@ -36,22 +36,38 @@
   border: 1px solid lightgrey;
 }
 
-.tweet h2 {
-  text-align: left;
-  margin: 0;
-  padding-top: 5px;
-  background: #eee;
+.tweet header {
+  clear: both;
 }
+
 .tweet .picture {
   height: 60px;
   float: left;
   padding: 10px;
 } 
 
+.tweet h2 {
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  background: #eee;
+  height: 60px;
+
+}
+
+.tweet span {
+  /* padding: 10px; */
+  float: right;
+}
+.tweet .tweet-content{
+  padding: 10px;
+}
+
 .tweet footer {
   text-align: left;
   margin: 0;
   border-top: .1px solid #eee;
+  padding: 10px;
+  font-size: smaller;
 }
-
 
