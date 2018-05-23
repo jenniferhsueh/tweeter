@@ -1,6 +1,6 @@
 $(document).ready(function(event) {
   const counter = $(".counter");
-  $("textarea").on("input", function(event) {
+  $("textarea").on("change", function(event) {
     const tweet = $(this).val(); //event.target.value.length
     const textCounter = 140 - tweet.length;
     const textRemaining = counter.text(textCounter);

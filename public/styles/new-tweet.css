@@ -28,26 +28,30 @@
   
 }
 
-.new-tweet .header {
-  text-align: left;
-  margin: 0;
-  margin-bottom: 1em;  
+
+
+.tweet {
+  background: white;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
 }
 
-.new-tweet footer {
+.tweet h2 {
   text-align: left;
   margin: 0;
-  margin-bottom: 1em;
-  background: white; 
+  padding-top: 5px;
+  background: #eee;
+}
+.tweet .picture {
+  height: 60px;
+  float: left;
+  padding: 10px;
+} 
+
+.tweet footer {
+  text-align: left;
+  margin: 0;
+  border-top: .1px solid #eee;
 }
 
-.new-tweet .header {
-  float: left;
-  font-size: 2em;
-  line-height: 2.5em;
-}
-.newtweet.picture {
-  resize: 20px;
-  height: 20px;
-  float: left;
-}
+
