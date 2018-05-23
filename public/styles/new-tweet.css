@@ -1,0 +1,53 @@
+.new-tweet {
+  background: #eee;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  top: 10px;
+}
+
+.new-tweet .counter {
+  float: right;
+  font-size: 0.75em;
+}
+
+.new-tweet h2 {
+  border-bottom: 1px solid black;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.new-tweet textarea {
+  width: 100%;
+  padding: 10px;
+  resize: 0;
+}
+
+.new-tweet input[type=submit] {
+  
+}
+
+.new-tweet .header {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;  
+}
+
+.new-tweet footer {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+  background: white; 
+}
+
+.new-tweet .header {
+  float: left;
+  font-size: 2em;
+  line-height: 2.5em;
+}
+.newtweet.picture {
+  resize: 20px;
+  height: 20px;
+  float: left;
+}
