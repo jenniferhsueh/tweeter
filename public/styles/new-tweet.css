@@ -40,7 +40,7 @@
   clear: both;
 }
 
-.tweet .picture {
+.tweet .bunny {
   height: 60px;
   float: left;
   padding: 10px;
@@ -55,8 +55,9 @@
 
 }
 
-.tweet span {
-  /* padding: 10px; */
+.tweet header h2 .at-user {
+  font-size: 10px;
+  font-weight: lighter;
   float: right;
 }
 .tweet .tweet-content{
@@ -71,3 +72,12 @@
   font-size: smaller;
 }
 
+.tweet footer .icon {
+  height: 15px;
+  padding: 2px;
+  float: right;
+  visibility: hidden;
+}  
+.tweet:hover .icon{
+  visibility: visible;
+}
