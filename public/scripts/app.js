@@ -3,7 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-const data = [
+const localdata = [
   {
     "user": {
       "name": "Newton",
@@ -52,11 +52,11 @@ const data = [
 
 $(document).ready(() => {
   function renderTweets(tweets) {
+    $("#tweet-list").empty();
     for (var i = 0; i < tweets.length; i++) {
       let tweet = tweets[i];
-      console.log(tweet);
       const $tweet = createTweetElement(tweet); //readability
-      $("#tweet-list").append($tweet); //append to tweet section in index.html
+      $("#tweet-list").prepend($tweet); //append to tweet section in index.html
     }
   }
 
@@ -81,29 +81,39 @@ $(document).ready(() => {
 
     return $article;
   }
-  // renderTweets(data);
 
   $("form").on("submit", function(event) {
     event.preventDefault();
-  });
-
+    const content = $(".new-tweet .tweetTextArea").val();
+    const textCounter = content.length;
+    if (textCounter === 0) {    
+      alert("Cannot post an empty tweet");
+    } if (textCounter > 140) {
+      alert("Tweets cannot be more than 140 characters");
+    } else {
+      const tweet = {
+        text: content
+      }
+      postTweets(tweet);
+    } 
+  }) 
+  
   function loadTweets() {
-    $.get("/tweets", function(data, status) {
-      renderTweets(data);
+    $.ajax({
+      url: "/tweets",
+      method: "GET",
+      // data: tweet,
+      success: function (data) {
+        renderTweets(data);
+      }
+    });
+  };
+  
+  function postTweets(tweet) {
+    $.post("/tweets", tweet, function(data) {
+      loadTweets();
     });
   }
 
 loadTweets();
-
-//WORKS SAME AS ABOVE
-  // function loadTweets(tweet) {
-  //   $.ajax({
-  //     url: "/tweets",
-  //     method: "GET",
-  //     data: tweet,
-  //     success: function () {
-  //       renderTweets(data);
-  //     }
-  //   });
-  // };
 });
