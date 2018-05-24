@@ -29,18 +29,25 @@
 }
 
 
-
 .tweet {
   background: white;
   border-radius: 5px;
   border: 1px solid lightgrey;
+  margin-bottom: 10px;
+}
+
+.tweets {
+  /* background: white;
+  border-radius: 5px;
+  border: 1px solid lightgrey; */
+  /* margin-bottom: 50px; */
 }
 
 .tweet header {
   clear: both;
 }
 
-.tweet .bunny {
+.tweet .avatar {
   height: 60px;
   float: left;
   padding: 10px;
@@ -55,11 +62,12 @@
 
 }
 
-.tweet header h2 .at-user {
+.tweet header h2 .handle {
   font-size: 10px;
   font-weight: lighter;
   float: right;
 }
+
 .tweet .tweet-content{
   padding: 10px;
 }

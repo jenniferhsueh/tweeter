@@ -54,21 +54,22 @@ $(document).ready(() => {
   function renderTweets(tweets) {
     for (var i = 0; i < tweets.length; i++) {
       let tweet = tweets[i];
+      console.log(tweet);
       const $tweet = createTweetElement(tweet); //readability
-      $(".tweet").append($tweet);
+      $("#tweet-list").append($tweet); //append to tweet section in index.html
     }
   }
 
   function createTweetElement(tweet) {
-    let $article = $("<article>");
+    let $article = $("<article>").addClass("tweet");
     let $header = $("<header>");
-    let $avatar = $("<img class='bunny'>").attr("src", tweet.user.avatars.small); 
+    let $avatar = $("<img>").addClass("avatar").attr("src", tweet.user.avatars.small); 
     let $username = $("<h2>").text(tweet.user.name);
     let $handle = $("<span>").addClass("handle").text(tweet.user.handle);
     let $br = $("<br>");
     let $content = $("<div>").addClass("tweet-content").text(tweet.content.text);
     let $footer = $("<footer>");
-    let $createdAt = $("<div>").text(tweet.created_at);
+    let $createdAt = $("<span>").text(tweet.created_at);
     let $heart = $("<img>").addClass("icon").attr("src", "/images/heart.png");
     let $retweet = $("<img>").addClass("icon").attr("src", "/images/retweet.png");
     let $flag = $("<img>").addClass("icon").attr("src", "/images/flag.png");
@@ -80,13 +81,29 @@ $(document).ready(() => {
 
     return $article;
   }
-  renderTweets(data);
+  // renderTweets(data);
+
+  $("form").on("submit", function(event) {
+    event.preventDefault();
+  });
+
+  function loadTweets() {
+    $.get("/tweets", function(data, status) {
+      renderTweets(data);
+    });
+  }
+
+loadTweets();
+
+//WORKS SAME AS ABOVE
+  // function loadTweets(tweet) {
+  //   $.ajax({
+  //     url: "/tweets",
+  //     method: "GET",
+  //     data: tweet,
+  //     success: function () {
+  //       renderTweets(data);
+  //     }
+  //   });
+  // };
 });
-
-
-
-// var $tweet = createTweetElement(tweetData);
-// console.log($tweet); // to see what it looks like
-// $('.tweet').append($tweet);
-// // var $tweet = $("<article>").addClass("tweet");
-// });
