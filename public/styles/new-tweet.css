@@ -24,11 +24,6 @@
   resize: 0;
 }
 
-.new-tweet input[type=submit] {
-  
-}
-
-
 .tweet {
   background: white;
   border-radius: 5px;
@@ -83,5 +78,3 @@
 .tweet:hover .icon {
   visibility: visible;
 }
-
-
