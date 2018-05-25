@@ -79,6 +79,9 @@
   float: right;
   visibility: hidden;
 }  
-.tweet:hover .icon{
+
+.tweet:hover .icon {
   visibility: visible;
 }
+
+

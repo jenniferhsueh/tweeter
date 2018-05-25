@@ -116,4 +116,11 @@ $(document).ready(() => {
   }
 
 loadTweets();
+
+
+  $(".compose").click(function(){
+    $(".new-tweet").toggle();
+    $(".tweetTextArea").focus();
+  });
+
 });
