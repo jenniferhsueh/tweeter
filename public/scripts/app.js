@@ -46,7 +46,6 @@ $(document).ready(function() {
 
     // !!!OR!!! just use something like handlebars or lit-html
   }
-  }
 
   $("form").on("submit", function(event) {
     event.preventDefault();
