@@ -15,7 +15,6 @@ Tweeter is a simple, single-page Twitter clone that uses HTML, CSS, JS, jQuery a
 - Node 5.10.x or above
 - body-parser
 - chance
-- bcrypt
 - md5
 - mongodb
 
