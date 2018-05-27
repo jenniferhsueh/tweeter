@@ -21,8 +21,8 @@ Tweeter is a simple, single-page Twitter clone that uses HTML, CSS, JS, jQuery a
 
 ## Screenshots
 
-!["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/tweeter-homepage.png)
+!["Screenshot of tweeter homepage"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/tweeter-homepage.png)
 
-!["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/toggle-compose-tweet.png)
+!["Screenshot of toggle compose tweet"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/toggle-compose-tweet.png)
 
-!["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/empty-tweet-post-alert.png)
+!["Screenshot of empty tweet post alert"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/empty-tweet-post-alert.png)
