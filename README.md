@@ -18,6 +18,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/tweeter-homepage.png)
-!["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/toggle.compose-tweet.png)
+!["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/tweeter-homepage.png
+
+!["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/toggle-compose-tweet.png)
+
 !["Screenshot of empty tweet post"](https://github.com/jenniferhsueh/tweeter/blob/master/docs/empty-tweet-post-alert.png)
